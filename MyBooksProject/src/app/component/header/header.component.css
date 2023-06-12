@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(29, 150, 83, 0.5);
+    margin: 0;
+  }
+  
+  .logo a img {
+    height: 50px;
+    width: auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4b4848;
+    background: linear-gradient(to right, #036950, #3a3939);
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+  
+  nav a:hover {
+    background: #707070;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background: linear-gradient(right, #036950, #3a3939);
+    color: #6dc2a1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .dropbtn:hover {
+    background: #8de0b7;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5a5656;
+    width: 120px; 
+  min-height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #ffffff;
+    font-family: 'Cinzel Decorative';
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 750px) {
+    header {
+      flex-direction: column;
+    }
+    
+    .page-title {
+      margin-top: 10px;
+    }
+    
+    .logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    .dropdown {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        text-align: right;
+    }
+    
+    .dropdown-content {
+        position: relative;
+        min-width: unset;
+        box-shadow: none;
+        right: 0;
+        left: auto;
+    }
+  }
+  

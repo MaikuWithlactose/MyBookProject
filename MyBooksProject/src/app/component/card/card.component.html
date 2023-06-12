@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-img">
+        <img [src]="book.photo" alt="Foto del libro">
+    </div>
+    <div class="card-body">
+        <h2>{{ book.title }}</h2>
+        <p>{{ book.author }}</p>
+        <p>Precio: {{ book.price | currency }}</p>
+        <hr>
+        <p class="refCode">{{ book.id_book | bookCode }}</p>
+        <hr>
+        <div [ngClass]="book.id_book%2==0 ? 'card-details' : 'card-details-v2' ">
+            <button (click)="deleteCard()">X</button>
+        </div>
+    </div>
+</div>

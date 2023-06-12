@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div {
+    height: 100vh;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/057/485/774/large/syllo-sylvain-lorgeou-ktululr-v007-002.jpg?1671718674');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+   
+
+.textoAviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 60px;
+    color: red;
+    font-style: bold;
+}
+
+.rowCards{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.formatCard{
+  width: 800px;
+  height: 500px;
+}
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.etsystatic.com/5310473/r/il/b243a8/558280863/il_fullxfull.558280863_mhco.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+  
+.parallax-content {
+  text-align: center;
+  color: #ffffff;
+  padding: 100px;
+}
+
+.parallax-content h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+}
+
+.parallax-content p {
+  font-family: 'Cinzel Decorative', cursive; 
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(3, 3, 3, 0.5);
+}
+
+.btn {
+  background-color: #000000;
+  color: #fdfcfc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5d8a70;
+}
+
+
+
+
+.findBook {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="url"] {
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+button {
+  padding: 15px 30px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: #047257;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #013016;
+}
+
+

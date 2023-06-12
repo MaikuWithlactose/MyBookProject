@@ -1,0 +1,26 @@
+<div>
+    <form>
+        <label>Título Macabro</label>
+        <input type="text" #InputTitle placeholder="Título Macabro">
+
+        <label>Tipo de Lectura</label>
+        <input type="text" #InputType placeholder="Tipo de lectura">
+
+        <label>Autor Maldecido</label>
+        <input type="text" #InputAuthor placeholder="Autor Maldecido">
+
+        <label>Precio Malevodo </label>
+        <input type="number" #InputPrice (input)="soloNumeros($event)" placeholder="Precio Malevodo">
+
+        <label>URL Abominable</label>
+        <input type="text" #InputPhoto placeholder="https://fotoprimeracomunion.png">
+
+        <label>Código secreto</label>
+        <input type="number" #InputId_book (input)="soloNumeros($event)" placeholder="Código secreto">
+
+        <button
+            on-click=rellenarFormulario(InputTitle.value,InputType.value,InputAuthor.value,InputPrice.value,InputPhoto.value,InputId_book.value)>
+            Agrega una nueva aberración
+        </button>
+    </form>
+</div>

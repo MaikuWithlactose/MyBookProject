@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="titleList">
+    <label>Listado de libros</label>
+  </div>
+
+  <div class="listContainer">
+    <div class="book-item" *ngFor="let book of updatingBooks">
+      ID/Título:
+      {{book.id_book}} - {{book.title}}
+    </div>
+  </div>
+  <form class="formContainer">
+
+    <li>
+      <label>Título Macabro Update</label><br>
+      <input type="text" #InputTitle placeholder="Título Macabro Update">
+    </li>
+
+    <li>
+      <label>Tipo de Lectura Update</label><br>
+      <input type="text" #InputType placeholder="Tipo de lectura Update">
+    </li>
+
+    <li>
+      <label>Autor Maldecido Update</label><br>
+      <input type="text" #InputAuthor placeholder="Autor Maldecido Update">
+    </li>
+    <li>
+      <label>Precio Malevodo Update </label><br>
+      <input type="number" #InputPrice (input)="soloNumeros($event)" placeholder="Precio Malevodo Update">
+    </li>
+
+    <li>
+      <label>URL Abominable Update</label><br>
+      <input type="text" #InputPhoto placeholder="https://fotoprimeracomunion.png">
+    </li>
+
+    <li>
+      <label>Código secreto Update</label><br>
+      <input type="number" #InputId_book (input)="soloNumeros($event)" placeholder="Código secreto Update">
+    </li>
+
+    <button class="centered-button"
+      on-click=rellenarFormulario(InputTitle.value,InputType.value,InputAuthor.value,InputPrice.value,InputPhoto.value,InputId_book.value)>Edita
+      la aberración
+    </button>
+  </form>
+</div>

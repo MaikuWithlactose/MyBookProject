@@ -1,0 +1,17 @@
+<div class="parallax">
+    <div class="parallax-content">
+        <h1>Biblioteca Inexpugnable</h1>
+        <div class="findBook">
+            <input type="url" placeholder="ID Libro" #input (input)="soloNumeros($event)">
+            <button type="button" on-click="findBook(input.value)">Buscar</button>
+        </div>
+        <div class="rowCards" *ngIf="localbooks.length !== 0;else listaVacia">
+            <div *ngFor="let book of localbooks">
+                <app-card class="formatCard" [book]="book" (delete)="removeCard($event)"></app-card>
+            </div>
+        </div>
+        <ng-template #listaVacia>
+            <span class="textoAviso"> No hay libros que mostrar</span>
+        </ng-template>
+    </div>
+</div>

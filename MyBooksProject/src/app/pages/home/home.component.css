@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax {
+    height: 100vh;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/057/485/774/large/syllo-sylvain-lorgeou-ktululr-v007-002.jpg?1671718674');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .parallax-content {
+    text-align: center;
+    color: #ffffff;
+    padding: 100px;
+  }
+  
+  .parallax-content h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+
+  }
+  
+  .parallax-content p {
+    font-family: 'Cinzel Decorative', cursive; 
+    font-size: 18px;
+    margin-bottom: 40px;
+ 
+    text-shadow: 2px 2px 4px rgba(3, 3, 3, 0.5);
+  }
+  
+  .btn {
+    background-color: #000000;
+    color: #fdfcfc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #5d8a70;
+  }

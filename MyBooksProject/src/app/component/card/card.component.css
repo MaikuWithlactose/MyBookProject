@@ -1,0 +1,99 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: -20px;
+}
+
+.card {
+  flex: 0 0 calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 40px);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  background-image: url('https://thumbs.dreamstime.com/b/blank-old-book-cover-illustration-61105642.jpg');
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 600px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  border: #025223 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.card-details h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-details button {
+  padding: 10px 20px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #5e0101;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-details button:hover {
+  background-color: #1f0000;
+}
+
+.card-details-v2 button {
+  padding: 10px 20px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #353535;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-details-v2 button:hover {
+  background-color: #000000;
+}
+
+.refCode{
+  font-weight: bold;
+}

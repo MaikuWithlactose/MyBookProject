@@ -1,0 +1,35 @@
+<header>
+<div class="container">
+  <div class="title">Perfil del Condenado</div>
+
+  <div class="profile-info">
+    <img [src]="user.photo" alt="Imagen de perfil">
+    <div class="profile-details">
+      <h2>{{ user.name }}</h2>
+      <p>{{ user.last_name }}</p>
+      <p>{{ user.email }}</p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>Modificar Datos Profanos</h2>
+    <form>
+      <label>Nombre Oscuro</label>
+      <input type="text" #InputName placeholder="Nombre Oscuro">
+
+      <label>Apellidos Insondables</label>
+      <input type="text" #InputLast_name placeholder="Apellido Insondables">
+
+      <label>Correo Prohibido</label>
+      <input type="text" #InputEmail placeholder="Correo prohibido">
+
+      <label>URL Abominable</label>
+      <input type="text" #InputPhoto  placeholder="https://fotoprimeracomunion.png">
+
+      <button on-click=CargarUser(InputName.value,InputLast_name.value,InputEmail.value,InputPhoto.value)>
+        Modifica si te atreves
+      </button>
+    </form>
+  </div>
+</div>
+</header>

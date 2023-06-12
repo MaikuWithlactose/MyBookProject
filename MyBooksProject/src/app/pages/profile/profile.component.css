@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+header {
+  font-family: 'Cinzel Decorative', bold;
+  background-color: #000;
+  color: #ffffff;
+  padding: 40px;
+  margin-top: 30px;
+  height: 100vh;
+  background-image: url('https://cdn.steamstatic.com/steamcommunity/public/images/items/262450/c7c5a34fa711627392858bec2cc19002a99f1bdc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Condenado-container {
+  font-family: 'Cinzel Decorative';
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.profile-info img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #0e3a03;
+  box-shadow: 0 0 20px rgba(216, 219, 216, 0.5);
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-info .profile-details {
+  margin-left: 20px;
+}
+
+.profile-info h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  margin-bottom: 5px;
+}
+
+.profile-info img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+.form-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.form-container button {
+  font-family: 'Cinzel Decorative';
+  padding: 10px 20px;
+  background-color: rgb(10, 126, 81);
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}

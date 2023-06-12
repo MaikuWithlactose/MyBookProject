@@ -1,0 +1,58 @@
+<header>
+  <div class="form-container">
+    <h2>Hágase parte de nuestro círculo</h2>
+    <form [formGroup]="registerForm">
+      <div class="form-group">
+        <label for="nombre">Nombre profano</label>
+        <input type="text" id="nombre" formControlName="nombre" required>
+        <div *ngIf="registerForm.controls['nombre'].invalid && registerForm.controls['nombre'].touched"
+          class="error-message">Campo obligatorio</div>
+      </div>
+
+      <div class="form-group">
+        <label for="apellido">Apellido ancestral</label>
+        <input type="text" id="apellido" formControlName="apellido" required>
+        <div *ngIf="registerForm.controls['apellido'].invalid && registerForm.controls['apellido'].touched"
+          class="error-message">Campo obligatorio</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email blasfemo</label>
+        <input type="email" id="email" formControlName="email" required>
+        <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched" class="error-message">
+          <div *ngIf="registerForm.controls['email'].errors?.['required']">Campo obligatorio</div>
+          <div *ngIf="registerForm.controls['email'].errors?.['email']">Email inválido</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="url">URL a tu abominable retrato:</label>
+        <input type="url" id="url" formControlName="url" required>
+        <div *ngIf="registerForm.controls['url'].invalid && registerForm.controls['url'].touched" class="error-message">
+          <div *ngIf="registerForm.controls['url'].errors?.['required']">Campo obligatorio</div>
+          <div *ngIf="registerForm.controls['url'].errors?.['pattern']">URL inválida</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contrasena">Contraseña arcana</label>
+        <input type="password" id="contrasena" formControlName="contrasena" required>
+        <div *ngIf="registerForm.controls['contrasena'].invalid && registerForm.controls['contrasena'].touched"
+          class="error-message">Campo obligatorio</div>
+      </div>
+
+      <div class="form-group">
+        <label for="repetir-contrasena">Repetir Contraseña maldita</label>
+        <input type="password" id="repetir-contrasena" formControlName="repetirContrasena" required>
+        <div
+          *ngIf="registerForm.controls['repetirContrasena'].invalid && registerForm.controls['repetirContrasena'].touched"
+          class="error-message">
+          <div *ngIf="registerForm.hasError('passwordMismatch')">Las contraseñas no coinciden</div>
+          <div *ngIf="registerForm.controls['repetirContrasena'].errors?.['required']">Campo obligatorio</div>
+        </div>
+      </div>
+
+      <button on-click="onSubmit()" [disabled]="registerForm.invalid">Invocar</button>
+    </form>
+  </div>
+</header>

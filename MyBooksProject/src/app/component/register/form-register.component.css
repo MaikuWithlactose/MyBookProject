@@ -1,0 +1,76 @@
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://mcdn.wallpapersafari.com/medium/91/79/k5wfiX.png'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #3a3a3a;
+  border: 1px solid #5e5e5e;
+  border-radius: 10px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #5e5e5e;
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #036950;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #6dc2a1;
+}
+
+.error-message {
+  color: red;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
